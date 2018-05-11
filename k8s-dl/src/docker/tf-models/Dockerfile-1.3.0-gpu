@@ -7,12 +7,12 @@
 # Note: this is hugely inspired from Google's Tensorflow Worshop 
 # from August (old version of https://github.com/amygdala/tensorflow-workshop)
 
-FROM tensorflow/tensorflow:1.3.0-gpu
+FROM midokuranet/tensorflow-arm64:1.8-gpu
 
 MAINTAINER Samuel Cozannet <samuel.cozannet@madeden.com>
 
 ENV DATA_DIR=/var/tensorflow/
-ENV IMAGENET_USERNAME=username
+ENV IMAGENET_USERNAME=alemido
 ENV IMAGENET_ACCESS_KEY=api_key
 ENV MODEL=imagenet
 

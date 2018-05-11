@@ -16,8 +16,8 @@ spec:
   accessModes:
   - {{ .Values.storage.accessMode }}
   nfs:
-    server: {{.Values.global.services.aws.efs.id}}.efs.{{.Values.global.services.aws.region}}.amazonaws.com
-    path: "/"
+    server: {{ .Values.storage.pv.server }}
+    path: {{ .Values.storage.pv.path }}
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
