@@ -32,7 +32,7 @@ dataLoader:
 
 tensorboard:
   replicaCount: 1
-  image: 
+  image:
     repo: gcr.io/tensorflow
     name: tensorflow
     dockerTag: 1.0.0
